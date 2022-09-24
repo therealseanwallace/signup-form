@@ -30,10 +30,21 @@
 
 /*STYLES*/
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 header {
-    background: no-repeat center url("/images/martian.webp");
+    background: no-repeat center url("/images/martian.png");
     height: 374px;
     padding-top: 120px;
+    background-size: cover;
 }
 
 h2 {
@@ -79,7 +90,7 @@ input[type=button] {
     margin-top: 20px;
 }
 
-input[type=text]:focus-visible, input[type=number]:focus-visible, input[type=password]:focus-visible   {
+input[type=text]:focus-visible, input[type=number]:focus-visible, input[type=password]:focus-visible, input[type=text]:hover, input[type=number]:hover, input[type=password]:hover {
     outline: none;
     box-shadow: 1px 2px rgba(221, 76, 47, 0.7);
 }
@@ -127,8 +138,6 @@ input[type=text]:focus-visible, input[type=number]:focus-visible, input[type=pas
     header {
         width: 450px;
         height: auto;
-        background: no-repeat center url("/images/martian-1.webp");
-        background-size: cover;
         padding-top: 400px;
     }
 
