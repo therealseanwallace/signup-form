@@ -1,0 +1,168 @@
+/*RESET STYLES */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/*STYLES*/
+
+header {
+    background: no-repeat center url("/images/martian.webp");
+    height: 374px;
+    padding-top: 120px;
+}
+
+h2 {
+    
+    color: #dd4c2f;
+    font-size: 1.8rem;
+    padding-bottom: 10px;;
+}
+
+h3 , p{
+    color: #cddadc;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+label {
+    color: #dd4c2f;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+fieldset {
+   border: none;
+   margin-bottom: 10px;
+
+}
+
+hr {
+    color: #dd4c2f;
+    width: 50%;
+    margin: auto;
+}
+
+input[type=button] {
+    margin-top: 20px;
+}
+
+input[type=text]:focus-visible, input[type=number]:focus-visible  {
+    outline: 2px solid #dd4c2f;
+}
+
+.content {
+    width: 320px;
+    margin: auto;
+    background-color: rgb(27, 26, 26);
+    text-align: center;
+    font-family: Quantico, sans-serif;
+}
+
+.logo-div {
+    background-color: rgba(255,255,255,0.5);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img {
+    /*opacity: 1;*/
+    height: auto;
+    width: 50%;
+}
+
+
+
+.form-title {
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+@media only screen and (min-width: 960px) {
+    .content {
+       width: 960px;
+       display: flex;
+    }
+
+    header {
+        width: 400px;
+        height: auto;
+        background: no-repeat center url("/images/martian-1.webp");
+        background-size: cover;
+        padding-top: 400px;
+    }
+
+    main {
+        width: 560px
+    }
+
+    label {
+        margin-right: 30px;
+    }
+
+    .form-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .form-field {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+    
+        font-size: 3.6rem;
+
+    }
+
+    .logo-div { 
+        height: 150px;
+    }
+
+    .logo-img{
+        width: 70%;
+    }
+
+    .form-input {
+        margin: 2px 50px 14px 50px;
+    }
+
+    
+  }
